@@ -1,5 +1,6 @@
 package com.example.backend.service;
 
+import com.example.backend.interfaces.PackInterface;
 import com.example.backend.model.Pack;
 import com.example.backend.repository.PackRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class PackService {
+public class PackService implements PackInterface {
 
     @Autowired
     private PackRepository packRepository;
